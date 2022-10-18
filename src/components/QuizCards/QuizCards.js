@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 
 const QuizCards = (props) => {
-    const {id, name, logo} = props.quiz;
+    const { name, logo, total} = props.quiz;
     // useEffect( () => {
     //     fetch('https://openapi.programming-hero.com/api/quiz')
     //     .then(res => res.json())
@@ -18,8 +18,7 @@ const QuizCards = (props) => {
                             <Card.Body>
                                 <Card.Title>Quiz Name: {name}</Card.Title>
                                 <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
+                                    Total Quiz: {total}
                                 </Card.Text>
                                 <Button variant="primary">Start Quiz</Button>
                             </Card.Body>
