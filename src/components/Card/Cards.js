@@ -10,7 +10,7 @@ const Cards = () => {
             <Card>
                 <Card.Img variant="top" src="https://chkskills.com/wp-content/uploads/2020/04/PNC-Animated-Banners.gif" />
                 <Card.Body>
-                    <Card.Text>
+                    <Card.Text className='text-center'>
                         <h3><span className='text-primary'>Dev Skill Test</span> is platform for test your web development skill.</h3>
                     </Card.Text>
                 </Card.Body>
