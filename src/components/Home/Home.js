@@ -14,14 +14,18 @@ const Home = () => {
             .then(data => setQuiz(data.data))
     }, [])
 
+    const handleQuizStartBtn = (quiz) => {
+        console.log(quiz)
+    }
+
     return (
         <div>
             <Cards></Cards>
             {
                 quizes.map(quiz => 
                     <QuizCards
-                        // key={id}
                         quiz={quiz}
+                        handleQuizStartBtn={handleQuizStartBtn}
                     ></QuizCards>)
             }
         </div>
